@@ -4,6 +4,7 @@ import { GET_KPIS } from "./graphql/queries";
 import Header from "./components/Header";
 import type { KPI } from "./types";
 import KpiCards from "./components/KpiCards";
+import Chart from "./components/Chart";
 
 const App = () => {
   const [dateRange, setDateRange] = useState("30d");
@@ -17,7 +18,12 @@ const App = () => {
       <div className="container mx-auto p-4">
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error.message}</p>}
-        {data && <KpiCards kpis={data.kpis} />}
+        {data && (
+          <>
+            <KpiCards kpis={data.kpis} />
+            <Chart kpis={data.kpis} />
+          </>
+        )}
       </div>
     </div>
   );
