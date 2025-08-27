@@ -1,0 +1,11 @@
+# Node modules
+/backend/node_modules
+
+# Output directories
+/backend/dist
+
+# env
+.env
+
+# DS_Store
+.DS_Store
