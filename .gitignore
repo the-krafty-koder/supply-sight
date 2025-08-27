@@ -9,3 +9,12 @@
 
 # DS_Store
 .DS_Store
+
+
+logs
+*.log
+
+*.local
+.vscode/*
+!.vscode/extensions.json
+
