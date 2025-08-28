@@ -54,6 +54,7 @@ Frontend - React, TailwindCSS, Vite, Rechart, Vitest
 - I used useSuspenseQuery with ErrorBoundary to fetch data and handle loading, error, and success states cleanly. While it was trickier to mock in tests, it worked well in practice, providing smooth transitions when filtering products or changing KPI date ranges.
 
 - I used Apollo’s useMutation hook to modify and refetch data, enabling quick updates on the frontend and keeping the UI in sync with backend changes.
+- KPI data is paginated when fetched, defaults to the last 30 days. Products data is paginated as well, defaults to first 10 rows.
 
 3. Performance improvements.
 
