@@ -7,9 +7,9 @@ const Header = ({ dateRange, setDateRange }: HeaderProps) => {
   const ranges = ["7d", "14d", "30d"];
 
   return (
-    <header className="bg-white shadow-sm sticky">
+    <header className="bg-slate-800 shadow-sm sticky">
       <div className="container mx-auto p-2 flex justify-between items-center">
-        <h1 className="text-lg font-bold text-gray-800">SupplySight</h1>
+        <h1 className="text-lg font-bold text-stone-100">SupplySight</h1>
         <div className="flex gap-2">
           {ranges.map((range) => (
             <span

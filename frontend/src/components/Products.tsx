@@ -1,20 +1,14 @@
+import { useFilters } from "../context/FiltersContext";
 import type { Product } from "../types";
 
 interface ProductsProps {
   products: Product[];
-  currentPage: number;
-  setCurrentPage: (page: number) => void;
-  rowsPerPage: number;
   onProductClick: (product: Product) => void;
 }
 
-const Products = ({
-  products,
-  currentPage,
-  setCurrentPage,
-  rowsPerPage,
-  onProductClick,
-}: ProductsProps) => {
+const Products = ({ products, onProductClick }: ProductsProps) => {
+  const { currentPage, setCurrentPage, rowsPerPage } = useFilters();
+
   const renderStatusPill = (stock: number, demand: number) => {
     if (stock > demand) {
       return (
