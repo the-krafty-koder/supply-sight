@@ -223,22 +223,6 @@
       "warehouse": "COP",
       "stock": 65,
       "demand": 60
-    },
-    {
-      "id": "P24-DUB",
-      "name": "Stud Finder",
-      "sku": "SF-024",
-      "warehouse": "DUB",
-      "stock": 190,
-      "demand": 180
-    },
-    {
-      "id": "P25-VIE",
-      "name": "Hand Riveter",
-      "sku": "HR-025",
-      "warehouse": "VIE",
-      "stock": 30,
-      "demand": 25
     }
   ],
   "warehouses": [
@@ -371,88 +355,88 @@
     },
     {
       "date": "2025-09-14",
-      "stock": 950,
-      "demand": 1720
+      "stock": 1200,
+      "demand": 1500
     },
     {
       "date": "2025-09-15",
-      "stock": 900,
-      "demand": 1800
+      "stock": 1400,
+      "demand": 1500
     },
     {
       "date": "2025-09-16",
-      "stock": 850,
-      "demand": 1780
+      "stock": 1600,
+      "demand": 1480
     },
     {
       "date": "2025-09-17",
-      "stock": 800,
-      "demand": 1850
+      "stock": 1800,
+      "demand": 1000
     },
     {
       "date": "2025-09-18",
-      "stock": 750,
-      "demand": 1820
+      "stock": 1550,
+      "demand": 700
     },
     {
       "date": "2025-09-19",
-      "stock": 700,
-      "demand": 1900
+      "stock": 1200,
+      "demand": 900
     },
     {
       "date": "2025-09-20",
-      "stock": 650,
-      "demand": 1880
+      "stock": 1300,
+      "demand": 1000
     },
     {
       "date": "2025-09-21",
-      "stock": 600,
-      "demand": 1950
+      "stock": 1250,
+      "demand": 1200
     },
     {
       "date": "2025-09-22",
-      "stock": 550,
-      "demand": 1920
+      "stock": 1400,
+      "demand": 1300
     },
     {
       "date": "2025-09-23",
-      "stock": 500,
-      "demand": 2000
+      "stock": 1450,
+      "demand": 1400
     },
     {
       "date": "2025-09-24",
-      "stock": 450,
-      "demand": 1980
+      "stock": 1500,
+      "demand": 1500
     },
     {
       "date": "2025-09-25",
-      "stock": 400,
-      "demand": 2050
+      "stock": 1300,
+      "demand": 1600
     },
     {
       "date": "2025-09-26",
-      "stock": 350,
-      "demand": 2020
+      "stock": 1450,
+      "demand": 1700
     },
     {
       "date": "2025-09-27",
-      "stock": 300,
-      "demand": 2100
+      "stock": 1000,
+      "demand": 1500
     },
     {
       "date": "2025-09-28",
-      "stock": 250,
-      "demand": 2080
+      "stock": 1300,
+      "demand": 1600
     },
     {
       "date": "2025-09-29",
-      "stock": 200,
-      "demand": 2150
+      "stock": 1600,
+      "demand": 1700
     },
     {
       "date": "2025-09-30",
-      "stock": 150,
-      "demand": 2120
+      "stock": 1700,
+      "demand": 1700
     }
   ]
 }

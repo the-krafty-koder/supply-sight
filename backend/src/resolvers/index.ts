@@ -36,7 +36,6 @@ const resolvers = {
     products: (_: unknown, args: ProductArgs): Product[] => {
       const { search, status, warehouse, offset = 1, limit = 10 } = args;
 
-      // Filter products first
       const filtered = products.filter((p) => {
         const matchesSearch =
           !search ||
@@ -48,7 +47,6 @@ const resolvers = {
         return matchesSearch && matchesWarehouse && matchesStatus;
       });
 
-      // Slice the array for pagination
       const startIndex = (offset - 1) * limit;
       return filtered.slice(startIndex, startIndex + limit);
     },
