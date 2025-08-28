@@ -3,15 +3,15 @@ interface HeaderProps {
   setDateRange: (range: string) => void;
 }
 
-const Header = ({ dateRange, setDateRange }: HeaderProps) => {
-  const ranges = ["7d", "14d", "30d"];
+const DATE_RANGES = ["7d", "14d", "30d"];
 
+const Header = ({ dateRange, setDateRange }: HeaderProps) => {
   return (
-    <header className="bg-slate-800 shadow-sm sticky">
+    <header className="bg-slate-800">
       <div className="container mx-auto p-2 flex justify-between items-center">
         <h1 className="text-lg font-bold text-stone-100">SupplySight</h1>
         <div className="flex gap-2">
-          {ranges.map((range) => (
+          {DATE_RANGES.map((range) => (
             <span
               key={range}
               className={`px-3 py-1 rounded-full text-sm font-medium cursor-pointer ${

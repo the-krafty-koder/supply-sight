@@ -19,6 +19,7 @@ class ErrorBoundary extends React.Component<
     this.state = { hasError: false };
   }
 
+  // eslint-disable-next-line
   static getDerivedStateFromError(error: unknown): ErrorBoundaryState {
     return { hasError: true };
   }

@@ -20,7 +20,7 @@ const ProductsSegment = memo(({ warehouses }: { warehouses: Warehouse[] }) => {
     setSelectedProduct(null);
   };
 
-  const { data: productData, error: productError } = useSuspenseQuery<{
+  const { data: productData } = useSuspenseQuery<{
     products: Product[];
   }>(GET_PRODUCTS, {
     variables: {

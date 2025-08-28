@@ -15,7 +15,7 @@ interface ChartProps {
 }
 
 const Chart = ({ kpis }: ChartProps) => {
-  if (!kpis?.length) return null;
+  if (!kpis?.length) return <span>No data</span>;
 
   const data = kpis.map((kpi) => ({
     ...kpi,

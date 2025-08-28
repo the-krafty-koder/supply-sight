@@ -10,7 +10,7 @@ const Filters = ({ warehouses }: FiltersProps) => {
     useFilters();
 
   return (
-    <div className="flex flex-row gap-2 p-4 bg-white rounded-lg shadow-sm border border-gray-200 ">
+    <div className="flex gap-2 p-4 bg-white rounded-lg shadow-sm border border-gray-200 ">
       <input
         type="text"
         placeholder="Search by name, SKU, or ID"

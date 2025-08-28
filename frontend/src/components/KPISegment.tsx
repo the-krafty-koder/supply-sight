@@ -1,8 +1,8 @@
 import { useSuspenseQuery } from "@apollo/client/react";
 import { GET_KPIS } from "../graphql/queries";
-import type { KPI } from "../types";
 import KpiCards from "./KpiCards";
 import Chart from "./Chart";
+import type { KPI } from "../types";
 
 interface KPISegmentProps {
   dateRange: string;

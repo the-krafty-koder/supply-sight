@@ -4,7 +4,6 @@ import { GET_WAREHOUSES } from "./graphql/queries";
 import Header from "./components/Header";
 import { FiltersProvider } from "./context/FiltersContext";
 import ProductsSegment from "./components/ProductsSegment";
-import {} from "sonner";
 import ErrorBoundary from "./components/ErrorBoundary";
 import type { Warehouse } from "./types";
 import KPISegment from "./components/KPISegment";
@@ -12,11 +11,9 @@ import KPISegment from "./components/KPISegment";
 const App = () => {
   const [dateRange, setDateRange] = useState("30d");
 
-  const { data: warehouseData, error: warehouseError } = useQuery<{
+  const { data: warehouseData } = useQuery<{
     warehouses: Warehouse[];
   }>(GET_WAREHOUSES);
-
-  if (warehouseError) `Error: {warehouseError.message}`;
 
   return (
     <FiltersProvider>

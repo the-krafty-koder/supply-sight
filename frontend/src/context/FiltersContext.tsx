@@ -1,4 +1,5 @@
-// src/context/FiltersContext.tsx
+/* eslint-disable react-refresh/only-export-components */
+
 import { createContext, useContext, useState, useEffect } from "react";
 import { useDebounce } from "../hooks/useDebounce";
 import type { ReactNode } from "react";
@@ -28,7 +29,6 @@ export const FiltersProvider = ({ children }: { children: ReactNode }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  // Reset page when relevant filters change (using debouncedSearch to avoid rapid resets while typing)
   useEffect(() => {
     setCurrentPage(1);
   }, [debouncedSearch, status, warehouse]);
