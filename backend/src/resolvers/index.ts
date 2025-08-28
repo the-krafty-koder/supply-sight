@@ -9,6 +9,8 @@ type ProductArgs = {
   search?: string;
   status?: ProductStatus;
   warehouse?: string;
+  offset: number;
+  limit: number;
 };
 type KpiArgs = { range: string };
 
@@ -32,17 +34,23 @@ const matchStatus = (p: Product, status?: ProductStatus): boolean => {
 const resolvers = {
   Query: {
     products: (_: unknown, args: ProductArgs): Product[] => {
-      const { search, status, warehouse } = args;
-      return products.filter((p) => {
-        const filteredSearch =
+      const { search, status, warehouse, offset = 1, limit = 10 } = args;
+
+      // Filter products first
+      const filtered = products.filter((p) => {
+        const matchesSearch =
           !search ||
           [p.name, p.sku, p.id].some((v) =>
             v.toLowerCase().includes(search.toLowerCase())
           );
-        const filteredWarehouse = !warehouse || p.warehouse === warehouse;
-        const filteredStatus = matchStatus(p, status);
-        return filteredSearch && filteredWarehouse && filteredStatus;
+        const matchesWarehouse = !warehouse || p.warehouse === warehouse;
+        const matchesStatus = matchStatus(p, status);
+        return matchesSearch && matchesWarehouse && matchesStatus;
       });
+
+      // Slice the array for pagination
+      const startIndex = (offset - 1) * limit;
+      return filtered.slice(startIndex, startIndex + limit);
     },
 
     warehouses: () => data.warehouses,
@@ -88,11 +96,19 @@ const resolvers = {
 
       fromProduct.stock -= qty;
 
-      let toProduct = products.find((p) => p.id === id && p.warehouse === to);
+      const toProductId = `${id.split("-")[0]}-${to}`;
+      let toProduct = products.find(
+        (p) => p.id === toProductId && p.warehouse === to
+      );
       if (toProduct) {
         toProduct.stock += qty;
       } else {
-        toProduct = { ...fromProduct, warehouse: to, stock: qty };
+        toProduct = {
+          ...fromProduct,
+          warehouse: to,
+          stock: qty,
+          id: toProductId,
+        };
         products.push(toProduct);
       }
       return toProduct;

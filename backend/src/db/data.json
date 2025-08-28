@@ -1,306 +1,458 @@
 {
   "products": [
     {
-      "id": "P1",
-      "name": "Steel Bolts",
-      "sku": "SKU-001",
-      "warehouse": "W1",
-      "stock": 120,
-      "demand": 80
+      "id": "P1-AMS",
+      "name": "Power Drill",
+      "sku": "PD-001",
+      "warehouse": "AMS",
+      "stock": 150,
+      "demand": 120
     },
     {
-      "id": "P1",
-      "name": "Steel Bolts",
-      "sku": "SKU-001",
-      "warehouse": "W2",
-      "stock": 95,
-      "demand": 70
+      "id": "P2-PAR",
+      "name": "Circular Saw",
+      "sku": "CS-002",
+      "warehouse": "PAR",
+      "stock": 250,
+      "demand": 250
     },
     {
-      "id": "P2",
-      "name": "Copper Wires",
-      "sku": "SKU-002",
-      "warehouse": "W3",
+      "id": "P3-BER",
+      "name": "Jigsaw",
+      "sku": "JS-003",
+      "warehouse": "BER",
+      "stock": 300,
+      "demand": 290
+    },
+    {
+      "id": "P4-LON",
+      "name": "Reciprocating Saw",
+      "sku": "RS-004",
+      "warehouse": "LON",
+      "stock": 100,
+      "demand": 85
+    },
+    {
+      "id": "P5-MAD",
+      "name": "Rotary Hammer",
+      "sku": "RH-005",
+      "warehouse": "MAD",
+      "stock": 50,
+      "demand": 60
+    },
+    {
+      "id": "P6-LIS",
+      "name": "Angle Grinder",
+      "sku": "AG-006",
+      "warehouse": "LIS",
       "stock": 200,
-      "demand": 140
+      "demand": 195
     },
     {
-      "id": "P2",
-      "name": "Copper Wires",
-      "sku": "SKU-002",
-      "warehouse": "W4",
-      "stock": 160,
-      "demand": 130
-    },
-    {
-      "id": "P3",
-      "name": "Plastic Tubes",
-      "sku": "SKU-003",
-      "warehouse": "W5",
-      "stock": 110,
-      "demand": 90
-    },
-    {
-      "id": "P3",
-      "name": "Plastic Tubes",
-      "sku": "SKU-003",
-      "warehouse": "W6",
-      "stock": 105,
+      "id": "P7-OSL",
+      "name": "Impact Driver",
+      "sku": "ID-007",
+      "warehouse": "OSL",
+      "stock": 75,
       "demand": 75
     },
     {
-      "id": "P4",
-      "name": "Aluminum Sheets",
-      "sku": "SKU-004",
-      "warehouse": "W7",
-      "stock": 250,
-      "demand": 200
-    },
-    {
-      "id": "P4",
-      "name": "Aluminum Sheets",
-      "sku": "SKU-004",
-      "warehouse": "W8",
-      "stock": 180,
-      "demand": 150
-    },
-    {
-      "id": "P5",
-      "name": "Rubber Gaskets",
-      "sku": "SKU-005",
-      "warehouse": "W9",
-      "stock": 140,
-      "demand": 120
-    },
-    {
-      "id": "P5",
-      "name": "Rubber Gaskets",
-      "sku": "SKU-005",
-      "warehouse": "W10",
-      "stock": 135,
-      "demand": 100
-    },
-    {
-      "id": "P6",
-      "name": "Glass Panels",
-      "sku": "SKU-006",
-      "warehouse": "W1",
-      "stock": 200,
-      "demand": 160
-    },
-    {
-      "id": "P7",
-      "name": "Wood Planks",
-      "sku": "SKU-007",
-      "warehouse": "W2",
-      "stock": 150,
-      "demand": 110
-    },
-    {
-      "id": "P8",
-      "name": "Ceramic Tiles",
-      "sku": "SKU-008",
-      "warehouse": "W3",
-      "stock": 180,
-      "demand": 140
-    },
-    {
-      "id": "P9",
-      "name": "Iron Rods",
-      "sku": "SKU-009",
-      "warehouse": "W4",
-      "stock": 210,
-      "demand": 170
-    },
-    {
-      "id": "P10",
-      "name": "PVC Pipes",
-      "sku": "SKU-010",
-      "warehouse": "W5",
-      "stock": 130,
-      "demand": 100
-    },
-    {
-      "id": "P11",
-      "name": "Insulation Boards",
-      "sku": "SKU-011",
-      "warehouse": "W6",
+      "id": "P8-COP",
+      "name": "Nail Gun",
+      "sku": "NG-008",
+      "warehouse": "COP",
       "stock": 90,
-      "demand": 70
-    },
-    {
-      "id": "P12",
-      "name": "Paint Buckets",
-      "sku": "SKU-012",
-      "warehouse": "W7",
-      "stock": 95,
       "demand": 80
     },
     {
-      "id": "P13",
-      "name": "Adhesive Mortar",
-      "sku": "SKU-013",
-      "warehouse": "W8",
-      "stock": 120,
+      "id": "P9-DUB",
+      "name": "Orbital Sander",
+      "sku": "OS-009",
+      "warehouse": "DUB",
+      "stock": 180,
+      "demand": 170
+    },
+    {
+      "id": "P10-VIE",
+      "name": "Air Compressor",
+      "sku": "AC-010",
+      "warehouse": "VIE",
+      "stock": 60,
+      "demand": 65
+    },
+    {
+      "id": "P11-AMS",
+      "name": "Router",
+      "sku": "RT-011",
+      "warehouse": "AMS",
+      "stock": 40,
+      "demand": 40
+    },
+    {
+      "id": "P12-PAR",
+      "name": "Concrete Mixer",
+      "sku": "CM-012",
+      "warehouse": "PAR",
+      "stock": 110,
       "demand": 100
     },
     {
-      "id": "P14",
-      "name": "Roof Tiles",
-      "sku": "SKU-014",
-      "warehouse": "W9",
-      "stock": 140,
-      "demand": 110
+      "id": "P13-BER",
+      "name": "Welding Machine",
+      "sku": "WM-013",
+      "warehouse": "BER",
+      "stock": 130,
+      "demand": 125
     },
     {
-      "id": "P15",
-      "name": "Concrete Mix",
-      "sku": "SKU-015",
-      "warehouse": "W10",
-      "stock": 160,
-      "demand": 140
-    },
-    {
-      "id": "P16",
-      "name": "Sandbags",
-      "sku": "SKU-016",
-      "warehouse": "W1",
-      "stock": 110,
+      "id": "P14-LON",
+      "name": "Jackhammer",
+      "sku": "JH-014",
+      "warehouse": "LON",
+      "stock": 95,
       "demand": 90
     },
     {
-      "id": "P17",
-      "name": "Cement Bags",
-      "sku": "SKU-017",
-      "warehouse": "W2",
-      "stock": 200,
-      "demand": 180
-    },
-    {
-      "id": "P18",
-      "name": "Steel Mesh",
-      "sku": "SKU-018",
-      "warehouse": "W3",
-      "stock": 170,
+      "id": "P15-MAD",
+      "name": "Tile Saw",
+      "sku": "TS-015",
+      "warehouse": "MAD",
+      "stock": 160,
       "demand": 150
     },
     {
-      "id": "P19",
-      "name": "Timber Beams",
-      "sku": "SKU-019",
-      "warehouse": "W4",
-      "stock": 130,
-      "demand": 100
+      "id": "P1-LIS",
+      "name": "Power Drill",
+      "sku": "PD-001",
+      "warehouse": "LIS",
+      "stock": 145,
+      "demand": 130
     },
     {
-      "id": "P20",
-      "name": "Insulation Foam",
-      "sku": "SKU-020",
-      "warehouse": "W5",
-      "stock": 140,
-      "demand": 120
+      "id": "P2-OSL",
+      "name": "Circular Saw",
+      "sku": "CS-002",
+      "warehouse": "OSL",
+      "stock": 240,
+      "demand": 240
     },
     {
-      "id": "P21",
-      "name": "Plastic Sheets",
-      "sku": "SKU-021",
-      "warehouse": "W6",
+      "id": "P3-COP",
+      "name": "Jigsaw",
+      "sku": "JS-003",
+      "warehouse": "COP",
+      "stock": 280,
+      "demand": 275
+    },
+    {
+      "id": "P4-DUB",
+      "name": "Reciprocating Saw",
+      "sku": "RS-004",
+      "warehouse": "DUB",
+      "stock": 90,
+      "demand": 80
+    },
+    {
+      "id": "P5-VIE",
+      "name": "Rotary Hammer",
+      "sku": "RH-005",
+      "warehouse": "VIE",
+      "stock": 45,
+      "demand": 50
+    },
+    {
+      "id": "P16-AMS",
+      "name": "Pressure Washer",
+      "sku": "PW-016",
+      "warehouse": "AMS",
+      "stock": 35,
+      "demand": 40
+    },
+    {
+      "id": "P17-PAR",
+      "name": "Concrete Vibrator",
+      "sku": "CV-017",
+      "warehouse": "PAR",
+      "stock": 80,
+      "demand": 75
+    },
+    {
+      "id": "P18-BER",
+      "name": "Floor Sander",
+      "sku": "FS-018",
+      "warehouse": "BER",
+      "stock": 55,
+      "demand": 50
+    },
+    {
+      "id": "P19-LON",
+      "name": "Heat Gun",
+      "sku": "HG-019",
+      "warehouse": "LON",
+      "stock": 25,
+      "demand": 30
+    },
+    {
+      "id": "P20-MAD",
+      "name": "Paint Sprayer",
+      "sku": "PS-020",
+      "warehouse": "MAD",
       "stock": 120,
-      "demand": 90
+      "demand": 115
+    },
+    {
+      "id": "P21-LIS",
+      "name": "Laser Level",
+      "sku": "LL-021",
+      "warehouse": "LIS",
+      "stock": 70,
+      "demand": 65
+    },
+    {
+      "id": "P22-OSL",
+      "name": "Tile Cutter",
+      "sku": "TC-022",
+      "warehouse": "OSL",
+      "stock": 45,
+      "demand": 50
+    },
+    {
+      "id": "P23-COP",
+      "name": "Pipe Wrench",
+      "sku": "PW-023",
+      "warehouse": "COP",
+      "stock": 65,
+      "demand": 60
+    },
+    {
+      "id": "P24-DUB",
+      "name": "Stud Finder",
+      "sku": "SF-024",
+      "warehouse": "DUB",
+      "stock": 190,
+      "demand": 180
+    },
+    {
+      "id": "P25-VIE",
+      "name": "Hand Riveter",
+      "sku": "HR-025",
+      "warehouse": "VIE",
+      "stock": 30,
+      "demand": 25
     }
   ],
   "warehouses": [
     {
-      "code": "W1",
-      "name": "Warehouse Berlin",
-      "city": "Berlin",
-      "country": "Germany"
-    },
-    {
-      "code": "W2",
-      "name": "Warehouse Paris",
-      "city": "Paris",
-      "country": "France"
-    },
-    {
-      "code": "W3",
-      "name": "Warehouse Madrid",
-      "city": "Madrid",
-      "country": "Spain"
-    },
-    {
-      "code": "W4",
-      "name": "Warehouse Milan",
-      "city": "Milan",
-      "country": "Italy"
-    },
-    {
-      "code": "W5",
-      "name": "Warehouse Amsterdam",
+      "code": "AMS",
+      "name": "Amsterdam Logistics",
       "city": "Amsterdam",
       "country": "Netherlands"
     },
     {
-      "code": "W6",
-      "name": "Warehouse Brussels",
-      "city": "Brussels",
-      "country": "Belgium"
+      "code": "PAR",
+      "name": "Parisian Supply",
+      "city": "Paris",
+      "country": "France"
     },
     {
-      "code": "W7",
-      "name": "Warehouse Vienna",
-      "city": "Vienna",
-      "country": "Austria"
+      "code": "BER",
+      "name": "Berlin Central Hub",
+      "city": "Berlin",
+      "country": "Germany"
     },
     {
-      "code": "W8",
-      "name": "Warehouse Zurich",
-      "city": "Zurich",
-      "country": "Switzerland"
+      "code": "LON",
+      "name": "London Distribution",
+      "city": "London",
+      "country": "United Kingdom"
     },
     {
-      "code": "W9",
-      "name": "Warehouse Lisbon",
+      "code": "MAD",
+      "name": "Madrid Storage",
+      "city": "Madrid",
+      "country": "Spain"
+    },
+    {
+      "code": "LIS",
+      "name": "Lisbon Freight",
       "city": "Lisbon",
       "country": "Portugal"
     },
     {
-      "code": "W10",
-      "name": "Warehouse Dublin",
+      "code": "OSL",
+      "name": "Oslo Warehouse",
+      "city": "Oslo",
+      "country": "Norway"
+    },
+    {
+      "code": "COP",
+      "name": "Copenhagen Depot",
+      "city": "Copenhagen",
+      "country": "Denmark"
+    },
+    {
+      "code": "DUB",
+      "name": "Dublin Logistics",
       "city": "Dublin",
       "country": "Ireland"
+    },
+    {
+      "code": "VIE",
+      "name": "Vienna Hub",
+      "city": "Vienna",
+      "country": "Austria"
     }
   ],
   "kpis": [
-    { "date": "2025-09-01", "stock": 1500, "demand": 1400 },
-    { "date": "2025-09-02", "stock": 1480, "demand": 1420 },
-    { "date": "2025-09-03", "stock": 1490, "demand": 1410 },
-    { "date": "2025-09-04", "stock": 1510, "demand": 1430 },
-    { "date": "2025-09-05", "stock": 1505, "demand": 1440 },
-    { "date": "2025-09-06", "stock": 1495, "demand": 1425 },
-    { "date": "2025-09-07", "stock": 1485, "demand": 1415 },
-    { "date": "2025-09-08", "stock": 1475, "demand": 1405 },
-    { "date": "2025-09-09", "stock": 1465, "demand": 1395 },
-    { "date": "2025-09-10", "stock": 1455, "demand": 1385 },
-    { "date": "2025-09-11", "stock": 1445, "demand": 1375 },
-    { "date": "2025-09-12", "stock": 1435, "demand": 1365 },
-    { "date": "2025-09-13", "stock": 1425, "demand": 1355 },
-    { "date": "2025-09-14", "stock": 1415, "demand": 1345 },
-    { "date": "2025-09-15", "stock": 1405, "demand": 1335 },
-    { "date": "2025-09-16", "stock": 1395, "demand": 1325 },
-    { "date": "2025-09-17", "stock": 1385, "demand": 1315 },
-    { "date": "2025-09-18", "stock": 1375, "demand": 1305 },
-    { "date": "2025-09-19", "stock": 1365, "demand": 1295 },
-    { "date": "2025-09-20", "stock": 1355, "demand": 1285 },
-    { "date": "2025-09-21", "stock": 1345, "demand": 1275 },
-    { "date": "2025-09-22", "stock": 1335, "demand": 1265 },
-    { "date": "2025-09-23", "stock": 1325, "demand": 1255 },
-    { "date": "2025-09-24", "stock": 1315, "demand": 1245 },
-    { "date": "2025-09-25", "stock": 1305, "demand": 1235 },
-    { "date": "2025-09-26", "stock": 1295, "demand": 1225 },
-    { "date": "2025-09-27", "stock": 1285, "demand": 1215 },
-    { "date": "2025-09-28", "stock": 1275, "demand": 1205 },
-    { "date": "2025-09-29", "stock": 1265, "demand": 1195 },
-    { "date": "2025-09-30", "stock": 1255, "demand": 1185 }
+    {
+      "date": "2025-09-01",
+      "stock": 1500,
+      "demand": 1400
+    },
+    {
+      "date": "2025-09-02",
+      "stock": 1450,
+      "demand": 1450
+    },
+    {
+      "date": "2025-09-03",
+      "stock": 1450,
+      "demand": 1500
+    },
+    {
+      "date": "2025-09-04",
+      "stock": 1380,
+      "demand": 1480
+    },
+    {
+      "date": "2025-09-05",
+      "stock": 1350,
+      "demand": 1550
+    },
+    {
+      "date": "2025-09-06",
+      "stock": 1280,
+      "demand": 1520
+    },
+    {
+      "date": "2025-09-07",
+      "stock": 1300,
+      "demand": 1600
+    },
+    {
+      "date": "2025-09-08",
+      "stock": 1250,
+      "demand": 1580
+    },
+    {
+      "date": "2025-09-09",
+      "stock": 1200,
+      "demand": 1650
+    },
+    {
+      "date": "2025-09-10",
+      "stock": 1150,
+      "demand": 1620
+    },
+    {
+      "date": "2025-09-11",
+      "stock": 1100,
+      "demand": 1700
+    },
+    {
+      "date": "2025-09-12",
+      "stock": 1050,
+      "demand": 1680
+    },
+    {
+      "date": "2025-09-13",
+      "stock": 1000,
+      "demand": 1750
+    },
+    {
+      "date": "2025-09-14",
+      "stock": 950,
+      "demand": 1720
+    },
+    {
+      "date": "2025-09-15",
+      "stock": 900,
+      "demand": 1800
+    },
+    {
+      "date": "2025-09-16",
+      "stock": 850,
+      "demand": 1780
+    },
+    {
+      "date": "2025-09-17",
+      "stock": 800,
+      "demand": 1850
+    },
+    {
+      "date": "2025-09-18",
+      "stock": 750,
+      "demand": 1820
+    },
+    {
+      "date": "2025-09-19",
+      "stock": 700,
+      "demand": 1900
+    },
+    {
+      "date": "2025-09-20",
+      "stock": 650,
+      "demand": 1880
+    },
+    {
+      "date": "2025-09-21",
+      "stock": 600,
+      "demand": 1950
+    },
+    {
+      "date": "2025-09-22",
+      "stock": 550,
+      "demand": 1920
+    },
+    {
+      "date": "2025-09-23",
+      "stock": 500,
+      "demand": 2000
+    },
+    {
+      "date": "2025-09-24",
+      "stock": 450,
+      "demand": 1980
+    },
+    {
+      "date": "2025-09-25",
+      "stock": 400,
+      "demand": 2050
+    },
+    {
+      "date": "2025-09-26",
+      "stock": 350,
+      "demand": 2020
+    },
+    {
+      "date": "2025-09-27",
+      "stock": 300,
+      "demand": 2100
+    },
+    {
+      "date": "2025-09-28",
+      "stock": 250,
+      "demand": 2080
+    },
+    {
+      "date": "2025-09-29",
+      "stock": 200,
+      "demand": 2150
+    },
+    {
+      "date": "2025-09-30",
+      "stock": 150,
+      "demand": 2120
+    }
   ]
 }

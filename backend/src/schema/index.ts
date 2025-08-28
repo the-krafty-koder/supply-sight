@@ -24,7 +24,13 @@ export const typeDefs = gql`
   }
 
   type Query {
-    products(search: String, status: String, warehouse: String): [Product!]!
+    products(
+      search: String
+      status: String
+      warehouse: String
+      offset: Int
+      limit: Int
+    ): [Product!]!
     warehouses: [Warehouse!]!
     kpis(range: String!): [KPI!]!
   }

@@ -30,7 +30,7 @@ const Chart = ({ kpis }: ChartProps) => {
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
         Trend of Stock vs Demand
       </h3>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={180}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
           <XAxis dataKey="date" tick={{ fill: "#6b7280" }} />
