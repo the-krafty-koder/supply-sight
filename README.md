@@ -4,7 +4,7 @@
 
 # Setup Instructions
 
-Clone the project folder at https://github.com/the-krafty-koder/supply-sight
+Clone the project folder at https://github.com/the-krafty-koder/supply-sight or decompress the zip attached.
 Navigate to the folder to install dependencies and run the app.
 
 # Backend
