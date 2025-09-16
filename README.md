@@ -1,6 +1,7 @@
 # Supply sight
 
-- The app is built using React + Tailwind for the frontend, and the mock server is built using node.js, express and apollo graphql.
+- The app is built using React + Tailwind for the frontend, and the mock server is built using Node.js, Express and Apollo Graphql.
+- View the [demo](https://www.loom.com/share/b3089c8fe875467d8e1679793eaa7817).
 
 # Setup Instructions
 
